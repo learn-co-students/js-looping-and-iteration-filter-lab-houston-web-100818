@@ -1,15 +1,12 @@
 // Code your solution in this file
 function findMatching(drivers, string) {
-  let match = drivers.filter(function (str) { return str.toUpperCase() == string.toUpperCase()});
-  return match;
+  return drivers.filter(function (str) { return str.toUpperCase() == string.toUpperCase()});
 }
 
 function fuzzyMatch(drivers, string) {
-  let fuzz = drivers.filter(function (str) {return str.slice(0, string.length) === string});
-  return fuzz;
+  return drivers.filter(function (str) {return str.slice(0, string.length) === string});
 }
 
 function matchName(drivers, string) {
-  let match = drivers.filter(function (str) {return str.name === string});
-  return match;
+  return drivers.filter(function (str) {return str.name === string});
 }
